@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alan Chang - Computer Science Student & Developer. Experienced in Python, Java, C, and web technologies. View my projects and get in touch.">
+    <meta name="theme-color" content="#2563eb">
+    <meta property="og:title" content="Alan Chang - Computer Science Student & Developer">
+    <meta property="og:description" content="Passionate developer with hands-on experience in Python, Java, and C. Building efficient solutions and exploring web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alanchangpage.com">
+    <meta property="og:image" content="https://alanchangpage.com/profile-photo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alan Chang - Computer Science Student & Developer">
+    <meta name="twitter:description" content="Passionate developer with hands-on experience in Python, Java, and C.">
+    <title>Alan Chang - Computer Science Student & Developer</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100'/><text x='50' y='65' font-size='70' fill='white' text-anchor='middle' font-weight='bold'>AC</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">Alan Chang</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-600 transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#home" class="block px-4 py-2 rounded hover:bg-blue-50 transition">Home</a>
+                <a href="#about" class="block px-4 py-2 rounded hover:bg-blue-50 transition">About</a>
+                <a href="#skills" class="block px-4 py-2 rounded hover:bg-blue-50 transition">Skills</a>
+                <a href="#projects" class="block px-4 py-2 rounded hover:bg-blue-50 transition">Projects</a>
+                <a href="#contact" class="block px-4 py-2 rounded hover:bg-blue-50 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-white text-gray-900 py-16 md:py-32 border-b-4 border-blue-600">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 whitespace-nowrap">Hi, I'm Alan Chang</h2>
+                    <p class="text-xl text-blue-600 font-semibold mb-6">Computer Science Student & Developer</p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">Passionate about building efficient solutions with Python, Java, and C. Exploring web technologies to create impactful applications.</p>
+                    <div class="flex gap-4">
+                        <a href="#projects" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105">View My Work</a>
+                        <a href="#contact" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition transform hover:scale-105">Contact Me</a>
+                    </div>
+                </div>
+                <div class="flex justify-center fade-in-delayed">
+                    <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white profile-image">
+                        <picture>
+                            <source type="image/webp" srcset="profile-photo.webp 1x, profile-photo@2x.webp 2x">
+                            <img src="profile-photo.jpg" alt="Alan Chang profile photo" class="w-full h-full object-cover" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold mb-16 text-left">About Me</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
+                        I'm a Computer Science student with hands-on experience in <strong>Python, Java, and C</strong>. My journey in programming started with school projects, and I've developed a passion for creating efficient, well-designed solutions.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed text-justify">
+                        I'm constantly seeking opportunities to apply my programming knowledge and expand my technical skills. Through my projects, I've learned the importance of problem-solving, collaboration, and continuous learning. I aim to make a positive impact on my professional growth and contribute meaningfully to projects I work on.
+                    </p>
+                </div>
+                <!-- Redesigned Quick Facts Section -->
+                <div class="bg-blue-50 rounded-lg p-8 self-start w-full">
+                    <h4 class="text-2xl font-bold text-blue-600 mb-6">Quick Facts</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3 min-w-0">
+                            <i class="fas fa-code text-blue-600 mt-1 flex-shrink-0 text-lg"></i>
+                            <span class="text-gray-700 break-words"><strong>Focus:</strong> System programming & Web development</span>
+                        </div>
+                        <div class="flex items-start gap-3 min-w-0">
+                            <i class="fas fa-graduation-cap text-blue-600 mt-1 flex-shrink-0 text-lg"></i>
+                            <span class="text-gray-700 break-words"><strong>Education:</strong> Computer Science Student</span>
+                        </div>
+                        <div class="flex items-start gap-3 min-w-0">
+                            <i class="fas fa-bolt text-blue-600 mt-1 flex-shrink-0 text-lg"></i>
+                            <span class="text-gray-700 break-words"><strong>Interests:</strong> Learning & optimization</span>
+                        </div>
+                        <div class="flex items-start gap-3 min-w-0">
+                            <i class="fas fa-envelope text-blue-600 mt-1 flex-shrink-0 text-lg"></i>
+                            <span class="text-gray-700 break-words"><strong>Email:</strong> <a href="mailto:24030088d@connect.polyu.hk" class="text-blue-600 hover:underline">24030088d@connect.polyu.hk</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold mb-16 text-left">Skills & Expertise</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Programming -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-blue-600 mr-4"></i>
+                        <h4 class="text-2xl font-bold">Programming</h4>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            Python
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            Java
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            C
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-globe text-2xl text-blue-600 mr-4"></i>
+                        <h4 class="text-2xl font-bold">Web Development</h4>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            HTML5
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            CSS3
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            JavaScript
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-wrench text-2xl text-blue-600 mr-4"></i>
+                        <h4 class="text-2xl font-bold">Tools & Tech</h4>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            Git & Version Control
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            Linux / Unix
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            SQL & Databases
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold mb-16 text-left">Featured Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-xl hover:border-blue-400 transition">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 h-48 flex items-center justify-center border-b border-blue-200">
+                        <i class="fas fa-parking text-blue-600 text-6xl opacity-70"></i>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Parking Management System</h4>
+                        <p class="text-gray-700 mb-4">
+                            Developed a comprehensive parking management system in C using advanced system programming concepts including fork() and pipe() system calls on Linux servers.
+                        </p>
+                        <div class="mb-4">
+                            <h5 class="font-semibold text-gray-800 mb-2">Key Features:</h5>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>✓ FCFS and Priority scheduling algorithms</li>
+                                <li>✓ Modular system architecture</li>
+                                <li>✓ Management of 10 parking slots</li>
+                                <li>✓ Robust error handling</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">C</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Linux</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">System Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-xl hover:border-blue-400 transition">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 h-48 flex items-center justify-center border-b border-blue-200">
+                        <i class="fas fa-lock text-blue-600 text-6xl opacity-70"></i>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-900">Secure File Sharing System</h4>
+                        <p class="text-gray-700 mb-4">
+                            Designed and implemented a comprehensive online storage system with robust security features including user authentication and file encryption.
+                        </p>
+                        <div class="mb-4">
+                            <h5 class="font-semibold text-gray-800 mb-2">Key Features:</h5>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>✓ User authentication system</li>
+                                <li>✓ File encryption & access control</li>
+                                <li>✓ Client-server architecture</li>
+                                <li>✓ SQLite database integration</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Networking</span>
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Security</span>
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold mb-16 text-left">Interests & Goals</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2">Learning</h4>
+                    <p class="text-gray-700">Exploring new programming languages and frameworks to expand my technical expertise.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2">Optimization</h4>
+                    <p class="text-gray-700">Passionate about optimizing and improving existing solutions for better performance.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2">Collaboration</h4>
+                    <p class="text-gray-700">Enhancing communication skills and teamwork to work effectively in diverse environments.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2">Wellness</h4>
+                    <p class="text-gray-700">Maintaining a healthy lifestyle to sustain productivity and mental well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold mb-6 text-left">Let's Get In Touch</h3>
+            <p class="text-xl text-gray-700 mb-12 max-w-2xl">
+                I'm always interested in hearing about new projects and opportunities. Feel free to reach out via email, GitHub, or LinkedIn!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:24030088d@connect.polyu.hk" class="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    <i class="fas fa-envelope mr-2"></i> Email Me
+                </a>
+                <a href="https://github.com/alannowalker" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/alannowalker/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="mb-2">&copy; 2026 Alan Chang. All rights reserved.</p>
+                <p class="text-sm text-gray-400">Built with HTML, Tailwind CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
