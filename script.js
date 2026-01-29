@@ -1,4 +1,7 @@
 // Mobile Menu Toggle with accessibility
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
 if (mobileMenuBtn) {
     mobileMenuBtn.setAttribute('aria-controls', 'mobile-menu');
     mobileMenuBtn.setAttribute('aria-expanded', 'false');
