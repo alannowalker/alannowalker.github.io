@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile-image {
     animation: float 6s ease-in-out infinite;
     box-shadow: 0 18px 40px rgba(37, 99, 235, 0.18);
-    background-color: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(0,0,0,0.02));
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(0,0,0,0.02));
 }
 
 @keyframes float {
